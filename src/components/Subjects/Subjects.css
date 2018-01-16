@@ -1,0 +1,12 @@
+main.subjects > ul.subjects {
+  list-style-type: none;
+}
+
+main.subjects > ul.subjects > li {
+  margin-bottom: 10px;
+}
+
+main.subjects > ul.subjects > li > a {
+  font-size: 1.5em;
+  /* display: block; */
+}

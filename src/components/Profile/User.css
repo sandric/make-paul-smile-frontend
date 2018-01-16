@@ -1,0 +1,60 @@
+main.profile > .account, main.profile > .scores {
+  display: flex;
+  justify-content: center;
+}
+
+main.profile > .account > .avatar {
+  height: 100px;
+  width: 100px;
+}
+
+main.profile > .account  img {
+  height: 100px;
+  width: 100px;
+}
+
+main.profile > .account > .attributes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main.profile > .account > .attributes p {
+  padding: 0px;
+  margin: 0px;
+}
+
+main.profile > .account > .attributes > p > span {
+  padding: 0px 10px;
+}
+
+main.profile > .scores {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+main.profile > .scores > table {
+  margin: 0 auto;
+}
+
+main.profile > .scores > table > tbody > tr {
+}
+
+main.profile > .scores > table > tbody > tr.total > td {
+  padding: 30px 5px 0px 5px;
+}
+
+main.profile > .scores > table > tbody > tr > td {
+  padding: 10px 5px 0px 5px;
+}
+
+main.profile > .scores > table > tbody > tr > td.left {
+  text-align: right;
+}
+main.profile > .scores > table > tbody > tr > td.right {
+  text-align: left;
+}
+main.profile button.sign-out {
+  display: block;
+  margin: 30px auto 5px;
+}

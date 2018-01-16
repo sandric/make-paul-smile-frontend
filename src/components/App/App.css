@@ -1,0 +1,126 @@
+body {
+  padding: 0px 0px 0px 0px;
+  max-width: 768px;
+  margin: 0 auto;
+  font-size: 0.9em;
+
+  font: 1.2em 'Rochester', sans-serif;
+}
+
+h1 {
+  padding-left: 10px;
+  font: 1.8em 'Rochester', Helvetica, sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  padding-left: 10px;
+  font: 1.5em 'Rochester', Helvetica, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font: 0.8em 'Rochester', Helvetica, sans-serif;
+}
+
+a:hover {
+  color: black; 
+  border-bottom: 2px solid red;
+}
+
+a:visited {
+  color: #428cd0;
+  text-decoration: none;
+}
+
+a {
+  color: #428cd0;
+  font: 1em 'Rochester', Helvetica, sans-serif;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  color: #428cd0;
+  cursor: pointer;
+  border-bottom: 2px solid red;
+}
+
+button {
+  color: #428cd0;
+  font: 1.5em 'Rochester', Helvetica, sans-serif;
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0px 0px;
+  border: 2px solid transparent;
+}
+
+
+header {
+  display: static;
+  font-size: 1.8em;
+  padding: 3px 5px 0px 10px;
+  margin: 0 0 5px 0;
+  border-bottom: 2px solid black;
+}
+
+header > nav {
+}
+
+header > nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header > nav a {
+  padding: 5px 10px 5px 5px;
+  color: #d04288 !important;
+}
+
+header > nav > .left {
+  margin-top: 14px;
+}
+
+header > nav > .right {
+  margin-top: 7px;
+}
+
+header > nav > .right {
+  margin-bottom: -2px;
+}
+
+header > nav > .right > a {
+  display: flex;
+}
+
+header > nav a > .avatar {
+  background-image: url(./avatar.png);
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+main.mission > img {
+  float: left;
+  margin: 0 20px 0 0;
+  border-radius: 3px;
+}
+
+main.mission .blockquote-left, main.mission .blockquote-right {
+  color: red;
+  font: 3.5em 'Rochester', sans-serif;
+  line-height: 0px;
+}
+
+main.mission .blockquote-left {
+  padding-right: 5px;
+}
+
+main.mission .blockquote-right {
+  padding-left: 5px;
+}

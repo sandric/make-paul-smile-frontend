@@ -1,0 +1,169 @@
+div.game {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+div.game > .controls {
+  width: 320px;
+  height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.game > .controls > .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scores > table {
+  width: 100%;
+}
+
+.scores > table td.right-moves > span {
+  color: green;
+}
+.scores > table td.wrong-moves > span {
+  color: red;
+}
+.scores > table td.completed  > span {
+  color: green;
+}
+.scores > table td.skipped > span {
+  color: red;
+}
+.scores > table td.hints > span {
+  color: red;
+}
+.scores > table td.total > span {
+  color: blue;
+}
+
+
+.progress {
+  margin-bottom: 5px;
+}
+
+.progress > p {
+  margin: 0px 0px 2px 0px;
+}
+
+.progress-bar {
+  height: 5px;
+  border-radius: 2px;
+  background-color: lightgrey;
+}
+
+.progress-bar > .progress-highlight {
+  height: 100%;
+  background-color: red;
+  border-radius: 5px;
+}
+
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status > img {
+  height: 60px;
+}
+
+.status-text {
+  background-color: #f7f0f0;
+  border-radius: 3px;
+  width: 240px;
+  height: 80px;
+  padding: 3px 5px;
+}
+
+.moves {
+  height: 50px;
+}
+
+
+.subjects {
+  display: flex;
+  flex-direction: column;
+}
+
+button.startGame {
+  display: block;
+  margin: 10px auto;
+}
+
+.chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(40px * 8);
+  height: calc(40px * 8);
+}
+
+.chessboard > .cell {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.chessboard > .cell.white-rock {
+  background-image: url(images/white/rock.svg);
+}
+.chessboard > .cell.white-bishop {
+  background-image: url(images/white/bishop.svg);
+}
+.chessboard > .cell.white-knight {
+  background-image: url(images/white/knight.svg);
+}
+.chessboard > .cell.white-quine {
+  background-image: url(images/white/quine.svg);
+}
+.chessboard > .cell.white-king {
+  background-image: url(images/white/king.svg);
+}
+.chessboard > .cell.white-pawn {
+  background-image: url(images/white/pawn.svg);
+}
+
+.chessboard > .cell.black-rock {
+  background-image: url(images/black/rock.svg);
+}
+.chessboard > .cell.black-bishop {
+  background-image: url(images/black/bishop.svg);
+}
+.chessboard > .cell.black-knight {
+  background-image: url(images/black/knight.svg);
+}
+.chessboard > .cell.black-quine {
+  background-image: url(images/black/quine.svg);
+}
+.chessboard > .cell.black-king {
+  background-image: url(images/black/king.svg);
+}
+.chessboard > .cell.black-pawn {
+  background-image: url(images/black/pawn.svg);
+}
+
+
+.chessboard > .cell.selected {
+  border: 2px solid green;
+}
+
+.chessboard > .cell.hinting {
+  background-color: blue;
+}
+
+
+.chessboard div:nth-child(-2n+8):not(.selected):not(.hinting),
+.chessboard div:nth-child(8) ~ div:nth-child(-2n+15):not(.selected):not(.hinting), 
+.chessboard div:nth-child(16) ~ div:nth-child(-2n+24):not(.selected):not(.hinting),
+.chessboard div:nth-child(24) ~ div:nth-child(-2n+31):not(.selected):not(.hinting),
+.chessboard div:nth-child(32) ~ div:nth-child(-2n+40):not(.selected):not(.hinting),
+.chessboard div:nth-child(40) ~ div:nth-child(-2n+47):not(.selected):not(.hinting),
+.chessboard div:nth-child(48) ~ div:nth-child(-2n+56):not(.selected):not(.hinting),
+.chessboard div:nth-child(56) ~ div:nth-child(-2n+63):not(.selected):not(.hinting) {
+  background-color: grey;
+}
